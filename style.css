@@ -1,0 +1,493 @@
+body {
+    background-color: teal;
+    background-image: linear-gradient(90deg, teal, rgb(71, 71, 71));
+}
+
+.table-top {
+    position: absolute;
+    width: 600px;
+    height: 9px;
+    background-color: black;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.left-leg {
+    position: absolute;
+    background-color: black;
+    width: 9px;
+    height: 120px;
+    left: 30%;
+    top: calc(50% + 10px);
+    transform: translateY(61%);
+}
+
+.left-leg::before {
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 5px;
+    height: 120px;
+    left: calc(22%);
+    top: 0;
+    top: 50%;
+    transform: translateY(-60%);
+}
+
+.right-leg {
+    position: absolute;
+    width: 80px;
+    height: 130px;
+    right: 30%;
+    top: 50%;
+    transform: translateY(calc(50% + 9px));
+}
+
+.stand1 {
+    height: 130px;
+    width: 5px;
+    position: absolute;
+    background-color: black;
+    left: 20%;
+}
+
+.stand2 {
+    height: 130px;
+    width: 5px;
+    position: absolute;
+    background-color: black;
+    right: 20%;
+}
+
+.cont1 {
+    height: 60px;
+    width: 65px;
+    background-color: black;
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cont2 {
+    height: 60px;
+    width: 65px;
+    background-color: black;
+    position: absolute;
+    top: 72px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.white {
+    position: absolute;
+    left: 5px;
+    width: 55px;
+    height: 5px;
+    background-color: white;
+    top: 6px;
+}
+
+.light9 {
+    position: absolute;
+    top: calc(60% - 13px);
+    right: 30%;
+    background-color: rgb(255, 174, 0);
+    height: 13px;
+    width: 70px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.light8 {
+    position: absolute;
+    top: calc(60% - 20px);
+    transform: translateX(-50%);
+    right: calc(30% - 5px);
+    background-color: rgb(0, 0, 0);
+    height: 8px;
+    width: 40px;
+    z-index: -1;
+}
+
+.light7 {
+    position: absolute;
+    top: calc(60% - 28px);
+    transform: translateX(-50%);
+    right: calc(30% + 35px);
+    background-color: rgb(255, 0, 0);
+    height: 8px;
+    width: 8px;
+    z-index: -1;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.light6 {
+    position: absolute;
+    top: calc(60% - 28px);
+    transform: translateX(-50%) translateY(-90%) rotate(20deg);
+    transform-origin: bottom;
+    right: calc(30% + 20px);
+    background-color: rgb(255, 174, 0);
+    height: 90px;
+    width: 8px;
+    z-index: -1;
+}
+
+.light5 {
+    position: absolute;
+    top: calc(50% - 30px);
+    transform: translateX(-50%) translateY(-90%) rotate(0deg);
+    transform-origin: bottom;
+    right: calc(30% - 15px);
+    background-color: rgb(0, 0, 0);
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.light4 {
+    position: absolute;
+    top: calc(50% - 45px);
+    transform: translateX(-50%) translateY(-90%) rotate(-50deg);
+    transform-origin: bottom;
+    right: calc(30% - 10px);
+    background-color: rgb(255, 174, 0);
+    height: 87px;
+    width: 8px;
+    z-index: -1;
+}
+
+.light3 {
+    position: absolute;
+    top: calc(40% - 15px);
+    transform: translateX(-50%) translateY(-90%) rotate(0deg);
+    transform-origin: bottom;
+    right: calc(30% + 50px);
+    background-color: rgb(0, 0, 0);
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.light2 {
+    position: absolute;
+    top: calc(40% + 5px);
+    transform: translateX(-50%) translateY(-90%) rotate(45deg);
+    transform-origin: top center;
+    right: calc(30% + 25px);
+    background-color: rgb(0, 0, 0);
+    height: 25px;
+    width: 45px;
+    border-radius: 150px 150px 0 0;
+    z-index: 10;
+}
+
+.light1 {
+    position: absolute;
+    top: calc(40% + 10px);
+    transform: translateX(-50%) translateY(-90%) rotate(45deg);
+    transform-origin: top center;
+    right: calc(30% + 50px);
+    background-color: rgb(255, 255, 255);
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.note {
+    position: absolute;
+    top: calc(60% - 90px);
+    right: 36%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    border: black 2px solid;
+    height: 86px;
+    width: 65px;
+}
+
+.note-top {
+    position: absolute;
+    top: calc(60% - 96px);
+    right: calc(38% - 4px);
+    background-color: rgb(166, 255, 0);
+    border-radius: 1px;
+    height: 10px;
+    width: 20px;
+}
+
+.note .circle {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border: 2px solid black;
+    border-radius: 50%;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.note .lines {
+    position: absolute;
+    height: 45px;
+    width: 50px;
+    top: 37%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.note .lines .line {
+    width: 50px;
+    height: 1px;
+    background-color: #000;
+    margin-top: 4px;
+}
+
+.mousePad {
+    position: absolute;
+    top: calc(60% - 4px);
+    right: 42%;
+    background-color: rgb(39, 121, 57);
+    height: 4px;
+    width: 80px;
+}
+
+.mouse {
+    position: absolute;
+    top: calc(60% - 17px);
+    right: calc(44% + 12px);
+    background-color: rgb(255, 255, 255);
+    transform: translateX(50%);
+    height: 13px;
+    width: 35px;
+    border: black 1px solid;
+    border-radius: 150px 150px 0 0;
+}
+
+.book-stand {
+    position: absolute;
+    border-bottom: 10px solid rgb(92, 91, 91);
+    height: 80px;
+    width: 130px;
+    top: 39%;
+    left: 22%;
+}
+
+.book-stand .book1 {
+    position: absolute;
+    top: calc(39% - 13px);
+    border: 1px solid black;
+    left: 22%;
+    width: 13px;
+    height: 60px;
+    background-color: salmon;
+}
+
+.book-stand .book2 {
+    position: absolute;
+    top: calc(39% - 26px);
+    border: 1px solid black;
+    left: calc(22% + 13px);
+    width: 15px;
+    height: 73px;
+    background-color: rgb(255, 252, 64);
+}
+
+.book-stand .book3 {
+    position: absolute;
+    top: calc(39% - 26px);
+    border: 1px solid black;
+    left: calc(22% + 63px);
+    width: 15px;
+    height: 73px;
+    background-color: rgb(255, 0, 0);
+    transform-origin: bottom left;
+    transform: rotate(-26deg);
+}
+
+.book-stand .book2 .lines {
+    width: 11px;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+}
+
+.book-stand .book2 .line2 {
+    width: 11px;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(10% + 5px);
+}
+
+.book-stand .book2 .line3 {
+    width: 11px;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(10% + 10px);
+}
+
+.book-stand .book2 .line4 {
+    width: 11px;
+    height: 7px;
+    background-color: red;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: calc(10%);
+}
+
+.book-stand .book3 .line1 {
+    top: 5%;
+    height: 19px;
+    width: 11px;
+    position: absolute;
+    left: calc(10% + 0.5px);
+    background-color: cornsilk;
+}
+
+.book-stand .book3 .line2 {
+    top: 40%;
+    height: 7px;
+    width: 11px;
+    position: absolute;
+    left: calc(10% + 0.5px);
+    background-color: cornsilk;
+}
+
+.comp-base {
+    position: absolute;
+    width: 80px;
+    height: 9px;
+    background-color: black;
+    top: calc(60% - 9px);
+    left: calc(50% - 30px);
+    transform: translateX(-50%);
+    border-radius: 150px 150px 0 0;
+}
+
+.comp-center {
+    position: absolute;
+    width: 12px;
+    height: 35px;
+    background-color: black;
+    top: calc(60% - 35px);
+    left: calc(50% - 30px);
+    transform: translateX(-50%);
+}
+
+.comp-screen {
+    position: absolute;
+    width: 250px;
+    height: 130px;
+    border: 10px solid black;
+    border-radius: 15px;
+    border-bottom: 16px solid black;
+    top: calc(40% - 45px);
+    left: calc(50% - 30px);
+    transform: translateX(-50%);
+    background-image: url('./images/screen.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.cup {
+    position: absolute;
+    top: calc(50% + 10px);
+    left: 33%;
+    width: 25px;
+    border-top: 60px solid rgb(159, 236, 159);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    z-index: -10;
+}
+
+.cup-lowerTop {
+    position: absolute;
+    top: calc(50%);
+    left: calc(33% - 7px);
+    width: 60px;
+    height: 10px;
+    background-color: #00704A;
+    border-radius: 3px;
+    z-index: 100;
+}
+
+.middle {
+    position: absolute;
+    border-top: 60px solid #fff;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    bottom: 100%;
+    left: 10%;
+    height: 10px;
+    background-color: salmon;
+}
+
+.straw-1 {
+    position: absolute;
+    top: calc(50% - 35px);
+    left: 35%;
+    height: 39px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    width: 6px;
+    transform: rotate(20deg);
+    transform-origin: bottom right;
+    background-color: rgb(255, 202, 202);
+}
+
+.keyboardStand-left {
+    position: absolute;
+    top: 61%;
+    left: 40%;
+    height: 22px;
+    width: 5px;
+    background-color: #000;
+    z-index: -10;
+}
+
+.keyboardStand-right {
+    position: absolute;
+    top: 61%;
+    right: 45%;
+    height: 22px;
+    width: 5px;
+    background-color: #000;
+    z-index: -10;
+}
+
+.keyboardStand-bottom {
+    position: absolute;
+    top: 64%;
+    right: calc(45% - 14px);
+    height: 12px;
+    width: 240px;
+    background-color: #000;
+}
+
+.keyboard {
+    position: absolute;
+    top: calc(64% - 9px);
+    right: calc(45% + 37px);
+    height: 9px;
+    border-radius: 150px 150px 0 0;
+    width: 130px;
+    border: 2px solid #000;
+    background-color: rgb(192, 192, 192);
+    z-index: -10;
+}
